@@ -172,10 +172,19 @@ header .navbar {
         --font-size-x1: 1.5rem;
         --font-size-xx1: 1.8rem;
     }
+    .navbar :where(#menu-close-button, #menu-open-button) {
+        font-size: var(--font-size-1);
+    }
+
+    .navbar #menu-close-button{
+        position: absolute;
+        
+    }
+
     .navbar .nav-menu{
     display: block;
     position: fixed;
-    left: 0;
+    left: -300;
     top: 0;
     width: 300px;
     height: 100%;
@@ -183,8 +192,13 @@ header .navbar {
     align-items: center;
     padding-top: 100px;
     flex-direction: column;
-    background: var(--white-color)
+    background: var(--white-color);
+    transition: left 0.2s ease;
     }
+}
+
+body.show-mobile-menu  .navbar .nav-menu{
+    left: 0;
 }
 
 .navbar .nav-menu .nav-link {
