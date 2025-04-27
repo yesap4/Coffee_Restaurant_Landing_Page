@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Linking font-awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -12,10 +14,19 @@
     <!-- Header and Navbar -->
     <header>
         <nav class="navbar section-content">
-            <a href="" class="nav-logo">
+    
+            <a href="#" class="nav-logo">
                 <h2 class="logo-text">☕ Coffee</h2>
             </a>
+    
+            <!-- Hidden Checkbox -->
+            <input type="checkbox" id="menu-toggle" hidden>
+    
+            <!-- Menu List -->
             <ul class="nav-menu">
+                <!-- Close button inside menu -->
+                <label for="menu-toggle" class="close-button fas fa-times"></label>
+    
                 <li class="nav-item">
                     <a href="#" class="nav-link">Home</a>
                 </li>
@@ -35,9 +46,13 @@
                     <a href="#" class="nav-link">Contact</a>
                 </li>
             </ul>
+    
+            <!-- Open Button -->
+            <label for="menu-toggle" class="open-button fas fa-bars"></label>
+    
         </nav>
     </header>
-
+    
     <main>
         <!-- Hero Section -->
         <section class="hero-section">
