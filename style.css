@@ -184,7 +184,7 @@ header .navbar {
     .navbar .nav-menu{
     display: block;
     position: fixed;
-    left: -300;
+    left: -300px;
     top: 0;
     width: 300px;
     height: 100%;
