@@ -296,9 +296,12 @@
      left: 0;
    }
  
-   .nav-link {
-     color: var(--primary-color);
-     margin: 10px 0;
+ 
+     .nav-link {
+    color: var(--primary-color); 
+    margin: 10px 0;
+    font-size: var(--font-size-1);
+     }
    }
  
    #menu-close-button {
@@ -358,8 +361,6 @@
    .navbar #menu-close-button {
      position: absolute;
    }
- 
-     .navbar .nav-menu{
    .navbar .nav-menu {
      display: block;
      position: fixed;
