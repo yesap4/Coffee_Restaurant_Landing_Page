@@ -170,20 +170,6 @@ header .navbar {
   .nav-menu.active {
     display: block;
   }
-.nav-menu .nav-item .nav-link{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 20px;
-    color: var(--white-color);
-    font-size: var(--font-size-m);
-    transition: 0.3s ease;
-    border-radius: var(--border-radius-m);
-}
-.nav-menu .nav-item:hover .nav-link{
-    color: var(--primary-color);
-    background: var(--secondary-color);
-}
 
 /* Responsive media query code for max width 900px */
 /* Extra small devices (phones, 600px and down) */
