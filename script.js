@@ -1,14 +1,9 @@
-// script.js
-document.addEventListener('DOMContentLoaded', () => {
-    const menuOpen = document.getElementById('menu-open-button');
-    const menuClose = document.getElementById('menu-close-button');
-    const navMenu = document.querySelector('.nav-menu');
+const menuOpenButton = document.querySelector("#menu-open-button");
 
-    menuOpen.addEventListener('click', () => {
-        navMenu.classList.add('active');
-    });
-
-    menuClose.addEventListener('click', () => {
-        navMenu.classList.remove('active');
-    });
+menuOpenButton.addEventListener("click", () => {
+//    Toggle mobile menu visibility
+    document.body.classList.toggle("show-mobile-menu");
 });
+
+// Close menu when the close button is clicked
+menuCloseButton.addEventListener("click", () => menuOpenButton.click());
