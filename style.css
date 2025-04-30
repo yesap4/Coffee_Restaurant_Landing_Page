@@ -170,7 +170,7 @@ header .navbar {
   .nav-menu.active {
     display: block;
   }
-.nav-menu .nav-item {
+.nav-menu .nav-item .nav-link{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -180,7 +180,7 @@ header .navbar {
     transition: 0.3s ease;
     border-radius: var(--border-radius-m);
 }
-.nav-menu .nav-item:hover {
+.nav-menu .nav-item:hover .nav-link{
     color: var(--primary-color);
     background: var(--secondary-color);
 }
