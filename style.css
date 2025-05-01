@@ -259,7 +259,7 @@ li.nav-item {
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-/* @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
     :root{
         --font-size-m: 1rem;
         --font-size-1: 1.3rem;
@@ -289,8 +289,8 @@ li.nav-item {
     background: var(--white-color);
     transition: left 0.2s ease;
     }
-} */
-/* Large devices (laptops/desktops, 992px and up) */
+} 
+/*  Large devices (laptops/desktops, 992px and up) */
 @media screen and (min-width: 992px) {
     :root{
         --font-size-m: 1rem;
@@ -321,9 +321,9 @@ li.nav-item {
     background: var(--white-color);
     transition: left 0.2s ease;
     }
-} */
-/* Extra large devices (large laptops and desktops, 1200px and up)
-/* @media screen and (min-width: 1200px) {
+} 
+ /* Extra large devices (large laptops and desktops, 1200px and up)  */
+ @media screen and (min-width: 1200px) {
     :root{
         --font-size-m: 1rem;
         --font-size-1: 1.3rem;
@@ -353,8 +353,8 @@ li.nav-item {
     background: var(--white-color);
     transition: left 0.2s ease;
     }
-} */
-
+}
+ 
 body.show-mobile-menu .navbar .nav-menu {
     left: 0;
 }
