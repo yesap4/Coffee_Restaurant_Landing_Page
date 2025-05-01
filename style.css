@@ -167,7 +167,7 @@ li.nav-item {
     display: inline-block;
     margin-right: 20px;
     background-color: var(--primary-color);
-    height: 50%;
+    height: 45%;
     width: 50%;
     border-radius: var(--border-radius-m);
     text-align: center;
