@@ -280,6 +280,7 @@ li.nav-item {
     position: fixed;
     left: -300;
     top: 0;
+    text-align: center;    
     width: 300px;
     height: 100%;
     display: flex;
