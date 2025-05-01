@@ -89,7 +89,7 @@ header .navbar {
 .navbar .nav-menu {
     display: flex;
     gap: 10px;
-    
+
 }
 
 .navbar .nav-menu .nav-link {
@@ -163,6 +163,26 @@ header .navbar {
     max-width: 500px;
     margin-right: 30px;
 }
+
+/* About section styling */
+.about-section {
+    padding: 120px 0;
+    background: var(--light-pink-color);
+}
+
+.about-section .section-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-section .about-image-wrapper .about-image {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: var(--border-radius-circle);
+}
+
 li.nav-item {
     display: inline-block;
     margin-right: 20px;
@@ -174,21 +194,22 @@ li.nav-item {
 }
 
 @media screen and (min-width: 901px) {
-   #menu-open-button,
-   #menu-close-button {
-     display: none;
-   }
- 
-   .navbar .nav-menu {
-     display: flex !important;
-     position: static !important;
-     flex-direction: row !important;
-     height: auto !important;
-     background: none !important;
-     padding-top: 0 !important;
-     gap: 10px;
-   }
- }
+
+    #menu-open-button,
+    #menu-close-button {
+        display: none;
+    }
+
+    .navbar .nav-menu {
+        display: flex !important;
+        position: static !important;
+        flex-direction: row !important;
+        height: auto !important;
+        background: none !important;
+        padding-top: 0 !important;
+        gap: 10px;
+    }
+}
 
 /* Responsive media query code for max width 900px */
 /* Extra small devices (phones, 600px and down) */
@@ -224,29 +245,29 @@ li.nav-item {
     }
 
 
-.hero-section .section-content {
-    gap: 50px;
-    text-align: center;
-    padding: 30px 20px 20px;
-    justify-content: center;
-    flex-direction: column-reverse;
-}    
-    
-.hero-section .hero-details :is(.subtitle, .description) {
-    max-width: 100%;
+    .hero-section .section-content {
+        gap: 50px;
+        text-align: center;
+        padding: 30px 20px 20px;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+
+    .hero-section .hero-details :is(.subtitle, .description) {
+        max-width: 100%;
+    }
+
+    .hero-section .hero-details .buttons {
+        justify-content: center;
+    }
+
+    .hero-section .hero-image-wrapper {
+        max-width: 270px;
+        margin-right: 0;
+    }
+
 }
 
-.hero-section .hero-details .buttons{
-    justify-content: center;
-}
-
-.hero-section .hero-image-wrapper{
-    max-width: 270px;
-    margin-right: 0;
-}    
-    
-}
-    
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media screen and (min-width: 600px) {
     :root {
@@ -290,16 +311,39 @@ li.nav-item {
         background: var(--white-color);
         transition: left 0.2s ease;
     }
+
+    .hero-section .section-content {
+        gap: 50px;
+        text-align: center;
+        padding: 30px 20px 20px;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+
+    .hero-section .hero-details :is(.subtitle, .description) {
+        max-width: 100%;
+    }
+
+    .hero-section .hero-details .buttons {
+        justify-content: center;
+    }
+
+    .hero-section .hero-image-wrapper {
+        max-width: 270px;
+        margin-right: 0;
+    }
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media screen and (min-width: 768px) {
-    :root{
+    :root {
         --font-size-m: 1rem;
         --font-size-1: 1.3rem;
         --font-size-x1: 1.5rem;
         --font-size-xx1: 1.8rem;
     }
+
     body.show-mobile-menu header::before {
         content: '';
         position: fixed;
@@ -315,26 +359,27 @@ li.nav-item {
         font-size: var(--font-size-1);
     }
 
-    .navbar #menu-close-button{
+    .navbar #menu-close-button {
         position: absolute;
-        
+
     }
 
-    .navbar .nav-menu{
-    display: block;
-    align-items: center;
-    position: fixed;
-    left: -300;
-    top: 0;   
-    width: 300px;
-    height: 100%;
-    display: flex;
-    padding-top: 100px;
-    flex-direction: column;
-    background: var(--white-color);
-    transition: left 0.2s ease;
+    .navbar .nav-menu {
+        display: block;
+        align-items: center;
+        position: fixed;
+        left: -300;
+        top: 0;
+        width: 300px;
+        height: 100%;
+        display: flex;
+        padding-top: 100px;
+        flex-direction: column;
+        background: var(--white-color);
+        transition: left 0.2s ease;
     }
-} 
+}
+
 /*  Large devices (laptops/desktops, 992px and up) */
 @media screen and (min-width: 992px) {
     :root {
@@ -344,7 +389,7 @@ li.nav-item {
         --font-size-xx1: 1.8rem;
     }
 
-  
+
 
     .navbar :where(#menu-close-button, #menu-open-button) {
         font-size: var(--font-size-1);
@@ -354,10 +399,10 @@ li.nav-item {
         position: absolute;
     }
 
-    .navbar .nav-menu{
+    .navbar .nav-menu {
         display: block;
         position: fixed;
-        left: -300px; 
+        left: -300px;
         top: 0;
         width: 300px;
         height: 100%;
@@ -365,46 +410,48 @@ li.nav-item {
         padding-top: 100px;
         flex-direction: column;
         background: var(--white-color);
-        transition: left 0.3s ease; 
+        transition: left 0.3s ease;
     }
 }
 
 body.show-mobile-menu .navbar .nav-menu {
-    left: 0; 
+    left: 0;
 }
- /* Extra large devices (large laptops and desktops, 1200px and up)  */
- @media screen and (min-width: 1200px) {
-    :root{
+
+/* Extra large devices (large laptops and desktops, 1200px and up)  */
+@media screen and (min-width: 1200px) {
+    :root {
         --font-size-m: 1rem;
         --font-size-1: 1.3rem;
         --font-size-x1: 1.5rem;
         --font-size-xx1: 1.8rem;
     }
+
     .navbar :where(#menu-close-button, #menu-open-button) {
         font-size: var(--font-size-1);
     }
 
-    .navbar #menu-close-button{
+    .navbar #menu-close-button {
         position: absolute;
-        
+
     }
 
-    .navbar .nav-menu{
-    display: block;
-    position: fixed;
-    left: -300;
-    top: 0;
-    width: 300px;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    padding-top: 100px;
-    flex-direction: column;
-    background: var(--white-color);
-    transition: left 0.2s ease;
+    .navbar .nav-menu {
+        display: block;
+        position: fixed;
+        left: -300;
+        top: 0;
+        width: 300px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding-top: 100px;
+        flex-direction: column;
+        background: var(--white-color);
+        transition: left 0.2s ease;
     }
 }
- 
+
 body.show-mobile-menu .navbar .nav-menu {
     left: 0;
 }
