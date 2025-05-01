@@ -173,10 +173,22 @@ li.nav-item {
     text-align: center;
 }
 
-@media screen and (max-width: 900px) {
-    #menu-open-button {
-      display: block;
-        }    }
+@media screen and (min-width: 901px) {
+   #menu-open-button,
+   #menu-close-button {
+     display: none;
+   }
+ 
+   .navbar .nav-menu {
+     display: flex !important;
+     position: static !important;
+     flex-direction: row !important;
+     height: auto !important;
+     background: none !important;
+     padding-top: 0 !important;
+     gap: 10px;
+   }
+ }
 
 /* Responsive media query code for max width 900px */
 /* Extra small devices (phones, 600px and down) */
