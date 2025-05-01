@@ -225,13 +225,28 @@ li.nav-item {
 
 
 .hero-section .section-content {
-    gap: 30px;
+    gap: 50px;
     text-align: center;
     padding: 30px 20px 20px;
     justify-content: center;
     flex-direction: column-reverse;
+}    
+    
+.hero-section .hero-details :is(.subtitle, .description) {
+    max-width: 100%;
 }
 
+.hero-section .hero-details .buttons{
+    justify-content: center;
+}
+
+.hero-section .hero-image-wrapper{
+    max-width: 270px;
+    margin-right: 0;
+}    
+    
+}
+    
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media screen and (min-width: 600px) {
     :root {
