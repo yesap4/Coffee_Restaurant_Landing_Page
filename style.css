@@ -87,21 +87,22 @@ header {
     position: fixed;
     width: 100%;
     z-index: 5;
-    background: #3b141c;
+    background: var(--primary-color);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
 }
+
 
 header .navbar {
     display: flex;
     padding: 10px 20px;
     align-items: center;
     justify-content: space-between;
-    background-color: #333;
-     color: white;
+    background-color: var(--primary-color);
+    color: var(--white-color);
     position: relative;
 }
 
 .navbar .nav-logo {
-  color: var(--white-color);
   display: flex;
   align-items: center;
 }
@@ -110,12 +111,15 @@ header .navbar {
     color: var(--white-color);
     font-size: var(--font-size-xl);
     font-weight: var(--font-weight-semibold);
+    letter-spacing: 1px;
 }
 
 .navbar .nav-menu {
     display: flex;
     gap: 10px;
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-item {
@@ -127,8 +131,10 @@ header .navbar {
     color: var(--white-color);
     text-decoration: none;
     font-size: var(--font-size-m);
-    transition: 0.3s ease;
-    border-radius: var(--border-radius-m);
+    transition: all 0.3s ease;
+    border-radius: var(--border-radius-s);
+    font-weight: var(--font-weight-medium);
+
 }
 
 .navbar .nav-menu .nav-link:hover {
@@ -142,7 +148,7 @@ header .navbar {
   font-size: 24px;
   background: none;
   border: none;
-  color: white;
+  color: var(--white-color);
   cursor: pointer;
 }
 
@@ -267,11 +273,29 @@ li.nav-item {
     top: 60px;
     left: -300px;
     width: 250px;
-    background-color: #444;
+    background-color: var(--primary-color);
     padding: 20px;
     visibility: hidden;
     transition: left 0.3s ease, visibility 0.3s ease;
     z-index: 1000;
+    border-radius: 0 10px 10px 0;
+  }
+
+  .nav-menu .nav-link {
+    width: 100%;
+    text-align: left;
+    padding: 12px;
+    font-size: var(--font-size-n);
+    border-radius: 6px;
+  }
+
+  .nav-menu .nav-link:hover {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+  }
+
+  #menu-open-button {
+    display: block;
   }
 
   #menu-close-button {
