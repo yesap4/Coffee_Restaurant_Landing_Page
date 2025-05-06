@@ -252,6 +252,8 @@ li.nav-item {
 
     .navbar .nav-menu {
         display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
         position: static !important;
         flex-direction: row !important;
         height: auto !important;
@@ -547,6 +549,12 @@ body.show-mobile-menu .navbar .nav-menu {
         flex-direction: column;
         background: var(--white-color);
         transition: left 0.2s ease;
+    }
+
+    .hero-section .section-content {
+        display: flex;
+        align-items: center;
+        color: var(--white-color);
     }
 }
 
