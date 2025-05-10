@@ -232,6 +232,15 @@ header .navbar {
     float: left;
 }
 
+.about-section .about-details .section-title {
+    padding: 0px;
+}
+
+.about-section .about-details {
+    max-width: 50%;
+}
+
+
 .about-section .about-details .text {
     line-height: 30px;
     margin: 50px 0 30px;
@@ -286,8 +295,20 @@ li.nav-item {
         padding-top: 0 !important;
         gap: 10px;
     }
-}
 
+    .about-section .section-content {
+        gap: 70px;
+        flex-direction: column-reverse;
+    }
+
+    .about-section .about-image-wrapper .about-image {
+        width: 100px;
+        height: 100%;
+        max-width: 250px;
+        aspect-ratio: 1;
+    }
+
+}
 /* Responsive: Mobile Menu */
 @media (max-width: 768px) {
     #menu-open-button {
@@ -378,7 +399,7 @@ li.nav-item {
         flex-direction: column-reverse;
     }
 
-    .hero-section .hero-details :is(.subtitle, .description) {
+    .hero-section .hero-details :is(.subtitle, .description), .about-section .about-details {
         max-width: 100%;
     }
 
